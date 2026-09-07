@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthawira — Pendamping Keuangan Pintar & Offline-First | Closed Beta v0.6.5</title>
+  <meta name="description" content="Arthawira adalah aplikasi pencatat dan pemantau keuangan pribadi dengan AI Assistant cerdas, multi-dompet, anggaran, dan kemampuan offline-first yang aman." />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="bg-glow glow-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-badge">
+          <i data-lucide="wallet" class="logo-icon"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Arthawira</span>
+          <span class="beta-tag">Closed Beta v0.6.5</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#fitur" class="nav-link">Fitur Utama</a>
+        <a href="#ai-demo" class="nav-link">Coba AI</a>
+        <a href="#panduan" class="nav-link">Panduan Mulai</a>
+        <a href="#offline-sync" class="nav-link">Offline & Sync</a>
+        <a href="#eksplorasi" class="nav-link">Misi Beta</a>
+        <a href="#feedback" class="nav-link">Beri Feedback</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#panduan" class="btn-primary-sm">
+          <i data-lucide="download" class="btn-icon"></i>
+          <span>Pasang APK</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-badge-pill">
+          <span class="pulse-dot"></span>
+          <span>Eksklusif Closed Beta Testers</span>
+          <span class="badge-accent">v0.6.5</span>
+        </div>
+
+        <h1 class="hero-title">
+          Kelola Keuangan Harian Lebih Nyaman, Cerdas, dan <span class="highlight-serif">Bebas Internet.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Selamat datang di Arthawira! Catat transaksi cukup ketik bahasa santai dengan <strong>AI Assistant</strong>, pantau multi-dompet, buat anggaran cerdas, dan tetap bisa mencatat walau tanpa koneksi internet.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#panduan" class="btn btn-primary btn-glow">
+            <i data-lucide="smartphone" class="btn-icon"></i>
+            <span>Mulai Panduan Instalasi</span>
+          </a>
+          <a href="#ai-demo" class="btn btn-secondary">
+            <i data-lucide="sparkles" class="btn-icon text-gold"></i>
+            <span>Coba Simulasi AI</span>
+          </a>
+        </div>
+
+        <!-- Quick Metrics Highlights -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-wrap bg-emerald">
+              <i data-lucide="sparkles"></i>
+            </div>
+            <div>
+              <div class="stat-value">AI Natural</div>
+              <div class="stat-label">Cukup ketik kalimat sehari-hari</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap bg-gold">
+              <i data-lucide="wifi-off"></i>
+            </div>
+            <div>
+              <div class="stat-value">100% Offline-Ready</div>
+              <div class="stat-label">Catat di mana saja tanpa kuota</div>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon-wrap bg-teal">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <div>
+              <div class="stat-value">Privasi & PIN Lock</div>
+              <div class="stat-label">Data terlindungi & anti-screenshot</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive AI Assistant Simulation Section -->
+    <section id="ai-demo" class="section bg-tint">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i data-lucide="bot"></i>
+            <span>Simulasi Interaktif</span>
+          </div>
+          <h2 class="section-title">Coba Ketik Transaksi ke AI Assistant</h2>
+          <p class="section-description">
+            Lihat bagaimana AI Arthawira mengubah percakapan santai menjadi draft transaksi terstruktur, lengkap dengan verifikasi <em>Human-in-the-Loop</em> sebelum disimpan ke dompetmu.
+          </p>
+        </div>
+
+        <div class="interactive-ai-container">
+          <!-- Left: Chat Assistant Mockup -->
+          <div class="ai-chat-card">
+            <div class="chat-header">
+              <div class="chat-avatar">
+                <i data-lucide="sparkles" class="avatar-icon"></i>
+              </div>
+              <div>
+                <div class="chat-title">AI Assistant Arthawira</div>
+                <div class="chat-status"><span class="online-indicator"></span> Siap mengekstrak transaksi</div>
+              </div>
+            </div>
+
+            <!-- Messages Stream -->
+            <div class="chat-body" id="chat-stream">
+              <div class="chat-bubble bubble-ai">
+                <p>Halo! Ceritakan transaksi apa yang baru saja kamu lakukan hari ini?</p>
+                <span class="bubble-time">08:00</span>
+              </div>
+            </div>
+
+            <!-- Quick Preset Prompts -->
+            <div class="preset-prompts-label">Coba contoh cepat:</div>
+            <div class="preset-prompts">
+              <button class="prompt-chip" onclick="handlePresetPrompt('Tadi makan nasi padang 25 ribu bayar cash')">
+                🍛 Makan nasi padang 25rb
+              </button>
+              <button class="prompt-chip" onclick="handlePresetPrompt('Beli bensin 30k pake BCA')">
+                ⛽ Beli bensin 30k BCA
+              </button>
+              <button class="prompt-chip" onclick="handlePresetPrompt('Dapet transferan gaji freelance 2.5 juta ke Mandiri')">
+                💰 Gaji freelance 2.5jt
+              </button>
+              <button class="prompt-chip" onclick="handlePresetPrompt('Beli kopi susu 18000 pake Gopay')">
+                ☕ Kopi susu 18rb
+              </button>
+            </div>
+
+            <!-- Chat Input Bar -->
+            <form class="chat-input-wrapper" onsubmit="handleCustomChat(event)">
+              <input type="text" id="ai-input" placeholder="Tulis transaksi, contoh: Beli pulsa 50k pake DANA..." />
+              <button type="submit" class="btn-send" id="btn-send-ai">
+                <i data-lucide="send"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right: Interactive Confirmation Sheet Preview -->
+          <div class="ai-preview-card" id="ai-preview-card">
+            <div class="preview-badge">
+              <i data-lucide="check-circle-2"></i>
+              <span>Konfirmasi Human-In-The-Loop</span>
+            </div>
+            
+            <h3 class="preview-title" id="preview-headline">Draft Ekstraksi Transaksi</h3>
+            <p class="preview-desc">
+              Prinsip utama Arthawira: <strong>AI membantu mengekstrak, namun keputusan akhir dan kebenaran nominal selalu di tanganmu.</strong>
+            </p>
+
+            <div class="extracted-details-box" id="extracted-box">
+              <div class="detail-row">
+                <span class="detail-label">Jenis Transaksi</span>
+                <span class="detail-val type-badge expense" id="extract-type">Pengeluaran</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Nominal</span>
+                <span class="detail-val amount-val" id="extract-amount">Rp 25.000</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Kategori</span>
+                <span class="detail-val category-tag" id="extract-category">Makanan & Minuman</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Dompet / Sumber</span>
+                <span class="detail-val wallet-tag" id="extract-wallet">Dompet Cash</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Catatan</span>
+                <span class="detail-val" id="extract-note">Makan nasi padang</span>
+              </div>
+            </div>
+
+            <div class="preview-actions">
+              <button class="btn btn-primary w-full" onclick="simulateConfirmTransaction()">
+                <i data-lucide="check"></i>
+                <span>Konfirmasi & Simpan Transaksi</span>
+              </button>
+              <div class="preview-action-secondary">
+                <button class="btn-link" onclick="simulateEditPrompt()">
+                  <i data-lucide="edit-3"></i> Edit Nominal / Kategori
+                </button>
+              </div>
+            </div>
+
+            <div class="live-toast" id="live-toast">
+              <i data-lucide="check-circle"></i>
+              <span>Transaksi berhasil disimpan ke dompet! Saldo diperbarui secara otomatis.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Grid -->
+    <section id="fitur" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i data-lucide="layers"></i>
+            <span>Kemampuan Utama</span>
+          </div>
+          <h2 class="section-title">Segala yang Kamu Butuhkan untuk Keuangan Rapi</h2>
+          <p class="section-description">
+            Didesain khusus untuk pemakaian harian yang cepat, tidak ribet, dan tetap handal saat bepergian.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1: Multi Dompet -->
+          <div class="feature-card">
+            <div class="feature-icon bg-emerald">
+              <i data-lucide="wallet-cards"></i>
+            </div>
+            <h3 class="feature-card-title">Multi-Dompet & Tabungan</h3>
+            <p class="feature-card-desc">
+              Pisahkan uang tunai, bank utama (BCA/Mandiri/BRI), dompet digital (GoPay/OVO/ShopeePay), hingga kantong target tabungan (*Goal Saving*) dengan saldo masing-masing yang selalu akurat.
+            </p>
+          </div>
+
+          <!-- Card 2: Manual Fast Logging -->
+          <div class="feature-card">
+            <div class="feature-icon bg-teal">
+              <i data-lucide="plus-circle"></i>
+            </div>
+            <h3 class="feature-card-title">Pencatatan Cepat Manual</h3>
+            <p class="feature-card-desc">
+              Ingin mencatat kilat tanpa mengetik? Gunakan keypad numerik bawaan dengan kategori cerdas berikon visual dan pilihan dompet satu-ketukan.
+            </p>
+          </div>
+
+          <!-- Card 3: Visual Reports -->
+          <div class="feature-card">
+            <div class="feature-icon bg-gold">
+              <i data-lucide="pie-chart"></i>
+            </div>
+            <h3 class="feature-card-title">Laporan & Donut Breakdown</h3>
+            <p class="feature-card-desc">
+              Pahami ke mana larinya uangmu setiap bulan lewat visualisasi grafik donut interaktif, perbandingan pengeluaran vs pemasukan, dan insight kategori terbesar.
+            </p>
+          </div>
+
+          <!-- Card 4: Budgets -->
+          <div class="feature-card">
+            <div class="feature-icon bg-amber">
+              <i data-lucide="target"></i>
+            </div>
+            <h3 class="feature-card-title">Anggaran & Peringatan Overspend</h3>
+            <p class="feature-card-desc">
+              Tetapkan batas belanja per kategori (misal: Makan Rp1.000.000/bln). Dapatkan indikator progres warna dan peringatan bertahap saat mendekati batas anggaran.
+            </p>
+          </div>
+
+          <!-- Card 5: Smart Reminders -->
+          <div class="feature-card">
+            <div class="feature-icon bg-indigo">
+              <i data-lucide="alarm-clock"></i>
+            </div>
+            <h3 class="feature-card-title">Pengingat Transaksi Rutin</h3>
+            <p class="feature-card-desc">
+              Jangan sampai lupa bayar kos, tagihan listrik, internet, atau langganan rutin. Notifikasi lokal akan mengingatkan tepat pada waktu yang kamu jadwalkan.
+            </p>
+          </div>
+
+          <!-- Card 6: PIN App Lock & Security -->
+          <div class="feature-card">
+            <div class="feature-icon bg-crimson">
+              <i data-lucide="lock"></i>
+            </div>
+            <h3 class="feature-card-title">App Lock & Perlindungan Privasi</h3>
+            <p class="feature-card-desc">
+              Lindungi data privasimu dengan 6 digit PIN terenkripsi salted hash SHA-256 dan perlindungan sistem anti-intip (*FLAG_SECURE*) saat multitasking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Offline-First Visualizer Section -->
+    <section id="offline-sync" class="section bg-tint">
+      <div class="container">
+        <div class="offline-sync-card">
+          <div class="offline-sync-header">
+            <div class="badge-offline">
+              <i data-lucide="cloud-lightning"></i>
+              <span>Offline-First Architecture</span>
+            </div>
+            <h2 class="offline-sync-title">Tetap Lancar Mencatat di Mana Saja, Kapan Saja</h2>
+            <p class="offline-sync-subtitle">
+              Tidak ada sinyal di basement parkir atau kehabisan kuota saat berbelanja? Tidak masalah. Seluruh transaksi langsung dicatat ke penyimpanan lokal perangkatmu terlebih dahulu.
+            </p>
+          </div>
+
+          <!-- Flow Interactive Toggle -->
+          <div class="sync-demo-container">
+            <div class="sync-toggle-bar">
+              <span class="toggle-label">Simulasikan Status Jaringan:</span>
+              <div class="toggle-switch-group">
+                <button class="toggle-btn active" id="btn-net-offline" onclick="setNetworkSimulation('offline')">
+                  <i data-lucide="wifi-off"></i> Mode Offline (Tanpa Internet)
+                </button>
+                <button class="toggle-btn" id="btn-net-online" onclick="setNetworkSimulation('online')">
+                  <i data-lucide="wifi"></i> Mode Online (Tersambung Cloud)
+                </button>
+              </div>
+            </div>
+
+            <!-- Visual Flow Steps -->
+            <div class="flow-steps-grid">
+              <div class="flow-step-item" id="step-1">
+                <div class="flow-step-num">1</div>
+                <div class="flow-icon-circle"><i data-lucide="edit-3"></i></div>
+                <h4 class="flow-step-title">Catat Transaksi</h4>
+                <p class="flow-step-desc">Kamu menambahkan pengeluaran makan Rp25.000.</p>
+              </div>
+
+              <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+
+              <div class="flow-step-item" id="step-2">
+                <div class="flow-step-num">2</div>
+                <div class="flow-icon-circle"><i data-lucide="database"></i></div>
+                <h4 class="flow-step-title">Drift SQLite Lokal</h4>
+                <p class="flow-step-desc">Tersimpan instan di perangkat. Status: <span class="badge-pill-inline" id="sync-status-badge">Pending Sync (is_synced: false)</span></p>
+              </div>
+
+              <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+
+              <div class="flow-step-item" id="step-3">
+                <div class="flow-step-num">3</div>
+                <div class="flow-icon-circle"><i data-lucide="cloud-sync"></i></div>
+                <h4 class="flow-step-title">Otomatis Sinkronisasi</h4>
+                <p class="flow-step-desc" id="sync-cloud-desc">Menunggu koneksi internet aktif kembali.</p>
+              </div>
+            </div>
+
+            <div class="sync-terminal-box">
+              <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">Sync Engine Status Monitor</span>
+              </div>
+              <div class="terminal-body" id="sync-terminal-log">
+                <div class="log-line text-muted">[08:45:00] App running on local Drift DB v3.</div>
+                <div class="log-line text-warning">[08:45:02] Network status: DISCONNECTED. Local transactions queued safely.</div>
+                <div class="log-line text-info">[08:45:05] Local wallet balance recalculated atomically: Rp 500.000 -> Rp 475.000.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started 3-Step Guide -->
+    <section id="panduan" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i data-lucide="book-open"></i>
+            <span>Langkah Mudah</span>
+          </div>
+          <h2 class="section-title">Mulai Menggunakan Arthawira dalam 3 Menit</h2>
+          <p class="section-description">
+            Panduan praktis bagi tester baru untuk menginstal dan menyiapkan dompet pertama kali.
+          </p>
+        </div>
+
+        <div class="onboarding-steps-grid">
+          <!-- Step 1 -->
+          <div class="onboarding-card">
+            <div class="step-badge-round">Langkah 1</div>
+            <div class="step-card-body">
+              <div class="step-icon-wrap bg-emerald"><i data-lucide="download"></i></div>
+              <h3 class="step-title">Instal APK Release</h3>
+              <p class="step-text">
+                Download file APK <strong>Arthawira v0.6.5</strong> dari link resmi Closed Beta yang diberikan. Buka file APK dan jika Android meminta izin <em>"Install unknown apps"</em>, berikan izin untuk melanjutkan.
+              </p>
+              <div class="step-tip">
+                <i data-lucide="info"></i>
+                <span>Aplikasi telah ditandatangani dengan sertifikat resmi Arthawira Release.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="onboarding-card">
+            <div class="step-badge-round">Langkah 2</div>
+            <div class="step-card-body">
+              <div class="step-icon-wrap bg-teal"><i data-lucide="key-round"></i></div>
+              <h3 class="step-title">Login & Verifikasi Akun</h3>
+              <p class="step-text">
+                Masukkan email dan password akun testermu. Jika diminta kode verifikasi OTP 6 digit, periksa inbox email dan masukkan kode tanpa membagikannya kepada orang lain. Sesi login akan tersimpan otomatis.
+              </p>
+              <div class="step-tip">
+                <i data-lucide="shield-alert"></i>
+                <span>Sesi tetap aktif saat aplikasi dibuka kembali walau tanpa koneksi internet.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="onboarding-card">
+            <div class="step-badge-round">Langkah 3</div>
+            <div class="step-card-body">
+              <div class="step-icon-wrap bg-gold"><i data-lucide="wallet"></i></div>
+              <h3 class="step-title">Atur Dompet & Saldo Awal</h3>
+              <p class="step-text">
+                Masukkan nama dompet pertamamu (misal: <strong>Cash</strong> atau <strong>BCA</strong>) dan tentukan saldo awal (misal: <strong>Rp 500.000</strong>). Saldo ini akan menjadi patokan dasar perhitungan transaksi harianmu.
+              </p>
+              <div class="step-tip">
+                <i data-lucide="sparkles"></i>
+                <span>Kamu bisa menambah dompet lain kapan saja melalui menu Dompet.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gamified Interactive Beta Discovery Tracker (Replaces Demanding Checklist) -->
+    <section id="eksplorasi" class="section bg-tint">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i data-lucide="compass"></i>
+            <span>Jelajahi Fitur Beta</span>
+          </div>
+          <h2 class="section-title">Peta Eksplorasi Closed Beta</h2>
+          <p class="section-description">
+            Tidak ada target kaku yang menuntut! Temukan fitur-fitur seru di Arthawira secara mandiri dan tandai fitur yang sudah kamu coba untuk memantau perjalanan betamu.
+          </p>
+        </div>
+
+        <div class="discovery-tracker-card">
+          <!-- Progress Bar & Level -->
+          <div class="tracker-header">
+            <div class="tracker-status-info">
+              <div class="explorer-badge" id="explorer-level-badge">
+                <i data-lucide="award"></i>
+                <span id="explorer-level-text">Tester Pemula</span>
+              </div>
+              <div class="tracker-count">
+                <span id="tracker-completed-count">0</span> dari 8 Fitur Telah Ditemukan
+              </div>
+            </div>
+
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="discovery-progress-fill" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <!-- Interactive Discovery Grid -->
+          <div class="discovery-items-grid">
+            <div class="discovery-item" onclick="toggleDiscovery(this, 1)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">1. Setup Dompet & Saldo Awal</div>
+                <div class="item-desc">Membuat kantong dompet pertama dan memasukkan saldo awal.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 2)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">2. Catat Transaksi Manual</div>
+                <div class="item-desc">Mencoba input pengeluaran kilat dengan keypad numerik dan kategori.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 3)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">3. Percakapan dengan AI Assistant</div>
+                <div class="item-desc">Mencatat pengeluaran menggunakan bahasa santai sehari-hari.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 4)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">4. Koreksi & Verifikasi Draft AI</div>
+                <div class="item-desc">Memeriksa kesesuaian nominal dan kategori pada bottom sheet konfirmasi.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 5)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">5. Coba Mode Offline</div>
+                <div class="item-desc">Mencoba catat transaksi saat internet mati, lalu cek kembali saat online.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 6)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">6. Pasang Anggaran Bulanan</div>
+                <div class="item-desc">Membuat batas anggaran belanja dan melihat indikator progres warnanya.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 7)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">7. Pantau Grafik Laporan Donut</div>
+                <div class="item-desc">Melihat ringkasan persentase pengeluaran terbesar bulan ini.</div>
+              </div>
+            </div>
+
+            <div class="discovery-item" onclick="toggleDiscovery(this, 8)">
+              <div class="item-checkbox"><i data-lucide="check"></i></div>
+              <div class="item-content">
+                <div class="item-title">8. Aktifkan Kunci Aplikasi (PIN Lock)</div>
+                <div class="item-desc">Mengatur 6 digit PIN untuk perlindungan privasi ekstra.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="discovery-footer">
+            <span class="text-muted"><i data-lucide="save"></i> Progres tersimpan secara otomatis di browser kamu.</span>
+            <button class="btn-link" onclick="resetDiscoveryProgress()">Reset Progres</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Helpful Feedback & Best Practices Section -->
+    <section id="feedback" class="section">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i data-lucide="message-square"></i>
+            <span>Kontribusi Tester</span>
+          </div>
+          <h2 class="section-title">Bantu Kami Menyempurnakan Arthawira</h2>
+          <p class="section-description">
+            Pendapatmu sangat berharga. Jika kamu menemukan tampilan membingungkan atau AI salah membaca nominal, kirimkan feedback melalui tombol di dalam aplikasi.
+          </p>
+        </div>
+
+        <div class="feedback-comparison-grid">
+          <!-- Bad Feedback Example -->
+          <div class="feedback-example-card bad">
+            <div class="feedback-card-header">
+              <div class="status-pill red">
+                <i data-lucide="x-circle"></i> Kurang Spesifik
+              </div>
+            </div>
+            <div class="feedback-quote">
+              "AI nya error min, gak bisa dipake."
+            </div>
+            <p class="feedback-explanation">
+              Tim pengembang kesulitan mengetahui di kalimat mana AI keliru atau apa yang sebenarnya diharapkan.
+            </p>
+          </div>
+
+          <!-- Good Feedback Example -->
+          <div class="feedback-example-card good">
+            <div class="feedback-card-header">
+              <div class="status-pill green">
+                <i data-lucide="check-circle"></i> Sangat Membantu!
+              </div>
+            </div>
+            <div class="feedback-quote">
+              "Saya ngetik 'makan nasi padang 30 ribu', tapi AI membaca nominalnya jadi Rp300.000 pada saat menggunakan AI Assistant jam 12 siang."
+            </div>
+            <p class="feedback-explanation">
+              Lengkap dengan input asli, hasil yang salah, dan konteks kejadian sehingga bisa langsung kami perbaiki.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Template Box -->
+        <div class="feedback-template-card">
+          <div class="template-header">
+            <i data-lucide="copy" class="template-icon"></i>
+            <div>
+              <div class="template-title">Template Cepat Lapor Kendala</div>
+              <div class="template-subtitle">Salin format ini jika menemukan sesuatu yang perlu diperbaiki:</div>
+            </div>
+          </div>
+          <pre class="template-code" id="feedback-template-text">1. Apa yang sedang dilakukan: (misal: Mencatat transaksi AI)
+2. Input yang ditulis: "Makan siang 25k pake cash"
+3. Hasil yang muncul: Nominal terbaca 2.500
+4. Status internet: Sedang Online / Offline</pre>
+          <div class="template-actions">
+            <button class="btn btn-secondary btn-sm" onclick="copyFeedbackTemplate()">
+              <i data-lucide="clipboard-copy"></i>
+              <span id="copy-btn-label">Salin Template</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="section bg-tint">
+      <div class="container max-w-3xl">
+        <div class="section-header text-center">
+          <div class="section-badge">
+            <i data-lucide="help-circle"></i>
+            <span>Tanya Jawab</span>
+          </div>
+          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Apakah data saya aman jika aplikasi sedang Closed Beta?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Ya. Arthawira menerapkan enkripsi PIN bersalt, kebijakan keamanan Supabase Row-Level Security (RLS), dan seluruh komunikasi data menggunakan HTTPS. Namun, karena masih dalam tahap pengujian beta, kami menyarankan untuk menggunakan estimasi transaksi sehari-hari.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Bagaimana jika AI salah mengekstrak nominal atau kategori?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Cukup pilih opsi edit pada lembar konfirmasi sebelum menekan tombol simpan, atau ubah langsung melalui halaman riwayat transaksi. Ingat: keputusan akhir selalu ada di tanganmu.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Apakah saya harus login berulang kali setiap membuka aplikasi?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Tidak. Setelah login pertama kali berhasil, sesi akun kamu tersimpan secara aman di perangkat sehingga aplikasi bisa langsung dibuka dan digunakan seketika tanpa harus memasukkan password lagi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Bagaimana cara kerja sinkronisasi offline ke online?</span>
+              <i data-lucide="chevron-down" class="faq-chevron"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Ketika offline, transaksi disimpan di database SQLite lokal di perangkatmu dengan tanda antrean sinkronisasi. Begitu HP kamu kembali terhubung ke WiFi atau data seluler, sistem otomatis mengunggah data baru ke server tanpa menghilangkan saldo yang sudah kamu catat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <div class="logo-badge">
+            <i data-lucide="wallet" class="logo-icon"></i>
+          </div>
+          <span class="brand-name">Arthawira</span>
+        </div>
+        <p class="footer-tagline">
+          Pendamping cerdas untuk mencatat, memahami, dan memegang kendali penuh atas keuangan harianmu.
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <div class="footer-version-pill">
+          <span class="pill-dot"></span>
+          <span>Closed Beta v0.6.5 (Build 1)</span>
+        </div>
+        <div class="footer-copyright">
+          © 2026 Arthawira. Crafted for seamless personal finance.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initialization -->
+  <script src="app.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
