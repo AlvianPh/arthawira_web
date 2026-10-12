@@ -254,11 +254,12 @@ function updateDiscoveryState() {
   if (fillEl) fillEl.style.width = `${percent}%`;
 
   // Update level text
+  // Update level text
   if (levelTextEl) {
     if (count === 0) levelTextEl.textContent = 'Tester Pemula';
     else if (count <= 2) levelTextEl.textContent = 'Tester Penjelajah 🧭';
     else if (count <= 5) levelTextEl.textContent = 'Pakar Finansial 💼';
-    else if (count < total) levelTextEl.textContent = 'Master Anggaran 🎯';
+    else if (count < total) levelTextEl.textContent = 'Master Anggaran 📊';
     else levelTextEl.textContent = 'Closed Beta Champion 🏆';
   }
 
