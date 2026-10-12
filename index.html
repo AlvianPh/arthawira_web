@@ -14,6 +14,9 @@
   <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png" />
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -25,7 +28,7 @@
   <header class="site-nav">
     <div class="container nav-inner">
       <a href="#" class="brand-wrap">
-        <div class="brand-icon-box">A</div>
+        <img src="logo.png" alt="Arthawira Logo" class="brand-logo-img" />
         <div class="brand-meta">
           <span class="brand-name">Arthawira</span>
           <span class="brand-version-pill">Closed Beta v0.6.6</span>
@@ -65,22 +68,22 @@
             </div>
 
             <h1 class="hero-title">
-              Kelola Keuangan Lebih Cerdas. <span class="highlight-lime">Bebas Kuota,</span> Serba Privat.
+              Keuangan Harian Jadi Rapi. <span class="highlight-lime">Bebas Kuota,</span> Serba Privat.
             </h1>
 
             <p class="hero-description">
-              Selamat datang tester! Catat pengeluaran cukup ketik bahasa santai bersama <strong>AI Assistant</strong>, kelola banyak dompet sekaligus, dan tetap mencatat dengan nyaman walau tanpa sinyal internet.
+              Ketik pengeluaran sesantai chat di WhatsApp. Asisten AI menyusun draft transaksi secara otomatis — dan seluruh data tersimpan 100% lokal di smartphone kamu secepat 0ms tanpa kuota internet.
             </p>
 
             <div class="hero-cta-box">
               <a href="arthawira-v0.6.6.apk" download="arthawira-v0.6.6.apk" class="btn-primary-hero">
                 <i data-lucide="download"></i>
-                <span>Download APK Resmi</span>
+                <span>Unduh APK Resmi</span>
                 <span class="apk-tag">~27 MB</span>
               </a>
               <a href="#simulasi" class="btn-secondary-hero">
                 <i data-lucide="sparkles"></i>
-                <span>Coba Simulasi AI</span>
+                <span>Coba Simulator AI</span>
               </a>
             </div>
 
@@ -111,7 +114,7 @@
                   <i data-lucide="message-square"></i>
                 </div>
                 <div>
-                  <div class="trust-label">Natural AI</div>
+                  <div class="trust-label">AI Percakapan</div>
                   <div class="trust-sub">Paham nominal 'k' & 'jt'</div>
                 </div>
               </div>
@@ -120,28 +123,6 @@
 
           <!-- Right: Optima AI CSS Smartphone Mockup -->
           <div class="hero-device-wrapper">
-            <!-- Floating Widget 1: AI Instant Parser -->
-            <div class="floating-widget widget-ai">
-              <div class="widget-icon-pill">
-                <i data-lucide="sparkles"></i>
-              </div>
-              <div>
-                <div class="widget-title">AI Auto-Extract</div>
-                <div class="widget-sub">Chat santai jadi draft transaksi</div>
-              </div>
-            </div>
-
-            <!-- Floating Widget 2: Offline 0ms Engine -->
-            <div class="floating-widget widget-offline">
-              <div class="widget-icon-pill">
-                <i data-lucide="wifi-off"></i>
-              </div>
-              <div>
-                <div class="widget-title">100% Offline-First</div>
-                <div class="widget-sub">Tersimpan lokal di perangkat</div>
-              </div>
-            </div>
-
             <!-- Smartphone Frame -->
             <div class="device-frame">
               <div class="device-screen">
@@ -163,7 +144,7 @@
                     <div class="user-greeting">Selamat Pagi,</div>
                     <div class="user-title">Ringkasan Finansial</div>
                   </div>
-                  <div class="avatar-badge">AW</div>
+                  <img src="logo_circle.png" alt="Arthawira" class="mockup-avatar-img" />
                 </div>
 
                 <!-- Main Balance Card -->
@@ -237,6 +218,12 @@
                     <div class="mockup-tx-amount amount-plus">+Rp 2.500.000</div>
                   </div>
                 </div>
+
+                <!-- Bottom AI Quick Input Pill inside Mockup -->
+                <div class="mockup-ai-pill">
+                  <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--color-brand-lime);"></i>
+                  <span>Ketik cepat: "Kopi susu 18k tunai"...</span>
+                </div>
               </div>
             </div>
           </div>
@@ -250,13 +237,10 @@
     <section id="simulasi" class="section section-alt">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag">
-            <i data-lucide="bot"></i>
-            <span>Simulasi AI Assistant</span>
-          </div>
+          <div class="section-kicker">01 // SIMULASI PERCAKAPAN ASISTEN AI</div>
           <h2 class="section-title">Ketik Bahasa Santai, Jadi Catatan Rapi</h2>
           <p class="section-subtitle">
-            Coba langsung simulator percakapan di bawah. Asisten AI akan mengekstrak nominal, kategori, dan dompet tujuan dengan verifikasi <em>Human-in-the-Loop</em> sebelum disimpan.
+            Uji coba langsung kecerdasan ekstraksi Arthawira. Asisten AI mendeteksi nominal, kategori, dan dompet secara real-time dengan verifikasi <em>Human-in-the-Loop</em> sebelum tersimpan.
           </p>
         </div>
 
@@ -265,9 +249,7 @@
           <div class="chat-device-card">
             <div class="chat-device-header">
               <div class="chat-assistant-meta">
-                <div class="assistant-avatar">
-                  <i data-lucide="sparkles" style="width: 20px; height: 20px;"></i>
-                </div>
+                <img src="logo_circle.png" alt="AI Assistant Arthawira" class="assistant-avatar-img" />
                 <div>
                   <div class="assistant-name">AI Assistant Arthawira</div>
                   <div class="assistant-status">
@@ -386,10 +368,7 @@
     <section id="fitur" class="section">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag">
-            <i data-lucide="layers"></i>
-            <span>Arsitektur & Keunggulan</span>
-          </div>
+          <div class="section-kicker">02 // ARSITEKTUR TEKNOLOGI</div>
           <h2 class="section-title">Finansial Modern Tanpa Kompromi</h2>
           <p class="section-subtitle">
             Fondasi rekayasa aplikasi keuangan yang kokoh: aman di perangkat lokal, cepat tanpa latensi server, dan cerdas saat terhubung.
@@ -438,15 +417,15 @@
             </div>
           </div>
 
-          <!-- Bento 2: Multi-Dompet & Rekening (Span 4) -->
+          <!-- Bento 2: Multi-Dompet Mandiri (Span 4) -->
           <div class="bento-card bento-card-4">
             <div>
               <div class="bento-badge-icon emerald">
                 <i data-lucide="wallet"></i>
               </div>
-              <h3 class="bento-card-title">Multi-Dompet Terpadu</h3>
+              <h3 class="bento-card-title">Fleksibilitas Multi-Dompet</h3>
               <p class="bento-card-desc">
-                Pisahkan alokasi kas harian, rekening bank, dan dompet digital dengan rekonsiliasi saldo atomik.
+                Bebas atur dan pisahkan pos alokasi keuanganmu: mulai dari rekening bank, dompet digital, hingga kas tunai harian dengan pencatatan saldo atomik.
               </p>
             </div>
 
@@ -538,10 +517,7 @@
     <section id="changelog" class="section section-alt">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag">
-            <i data-lucide="history"></i>
-            <span>Catatan Rilis Pengembang</span>
-          </div>
+          <div class="section-kicker">03 // CATATAN RILIS CLOSED BETA</div>
           <h2 class="section-title">Changelog Closed Beta v0.6.6</h2>
           <p class="section-subtitle">
             Pembaruan rilis build terbaru untuk para tester dengan fokus pada perbaikan bug, pengetatan keamanan, dan identitas visual aplikasi.
@@ -680,10 +656,7 @@
     <section id="misi" class="section">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag">
-            <i data-lucide="compass"></i>
-            <span>Misi Penjelajahan Beta</span>
-          </div>
+          <div class="section-kicker">04 // MISI PENGUJIAN TESTER</div>
           <h2 class="section-title">Eksplorasi Fitur & Selesaikan Misi</h2>
           <p class="section-subtitle">
             Bantu kami menguji 6 skenario utama Arthawira. Centang misi yang sudah kamu coba di perangkatmu (tersimpan otomatis di browser).
@@ -778,10 +751,7 @@
     <section id="feedback" class="section section-alt">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-tag">
-            <i data-lucide="message-square"></i>
-            <span>Saluran Tester</span>
-          </div>
+          <div class="section-kicker">05 // FEEDBACK & LAPORAN BUG</div>
           <h2 class="section-title">Suara Kamu Membangun Arthawira</h2>
           <p class="section-subtitle">
             Menemukan kendala, bug tampilan, atau punya saran fitur baru? Salin template laporan di bawah dan kirimkan langsung ke pengembang.
@@ -873,11 +843,8 @@ Saran perbaikan:
     <section id="faq" class="section">
       <div class="container max-w-lg">
         <div class="section-header text-center">
-          <div class="section-tag">
-            <i data-lucide="help-circle"></i>
-            <span>Tanya Jawab Tester</span>
-          </div>
-          <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+          <div class="section-kicker">06 // TANYA JAWAB UMUM (FAQ)</div>
+          <h2 class="section-title">Pertanyaan Umum</h2>
           <p class="section-subtitle">
             Segala hal yang perlu kamu ketahui seputar instalasi APK dan keamanan data selama fase Closed Beta.
           </p>
@@ -935,7 +902,7 @@ Saran perbaikan:
     <div class="container">
       <div class="footer-top-row">
         <div class="footer-brand">
-          <div class="brand-icon-box">A</div>
+          <img src="logo.png" alt="Arthawira Logo" class="brand-logo-img" />
           <div>
             <div style="font-size: 1.1rem; font-weight: 800; color: #FFFFFF;">Arthawira</div>
             <div style="font-size: 0.75rem; color: var(--color-text-inverse-muted);">Pendamping Finansial Cerdas & Bebas Kuota</div>
